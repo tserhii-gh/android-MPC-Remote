@@ -57,9 +57,13 @@
 
     <string name="hint_framestep">Framestep</string>
 
-    <string name="jump_note">Note: Medium and Large jumps are subject to MPC\'s settings, but by default are 5 and 20 seconds</string>
+    <string name="hint_strams">Streams</string>
 
-    <string name="screenshot_note">Note: Screenshots will save to the computer, not this device</string>
+    <string name="hint_mute">Mute</string>
+
+    <string name="hint_vol_inc">Vol+</string>
+
+    <string name="hint_vol_desc">Vol-</string>
 
     <string name="hint_continue">Continue</string>
 

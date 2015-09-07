@@ -18,6 +18,7 @@
     <string name="hint_framestep">Framestep</string>
     <string name="hint_fullscreen">Fullscreen</string>
     <string name="hint_ljump">"L. Jump"</string>
+    <string name="hint_mute">Mute</string>
     <string name="hint_next">Next</string>
     <string name="hint_pause">Pause</string>
     <string name="hint_play">Play</string>
@@ -25,8 +26,10 @@
     <string name="hint_screenshot">Screenshot</string>
     <string name="hint_sjump">"M. Jump"</string>
     <string name="hint_stop">Stop</string>
+    <string name="hint_strams">Streams</string>
     <string name="hint_subtitles">Subtitles</string>
-    <string name="jump_note">Note: Medium and Large jumps are subject to MPC\'s settings, but by default are 5 and 20 seconds</string>
+    <string name="hint_vol_desc">Vol-</string>
+    <string name="hint_vol_inc">Vol+</string>
     <!-- From: file:/E:/DEV/ANDROID/android-MPC-Remote/app/src/main/res/values/commands.xml -->
     <eat-comment/>
     <string name="ljumpback">903</string>
@@ -46,7 +49,6 @@
     <string name="screenshot">807</string>
     <!-- From: file:/E:/DEV/ANDROID/android-MPC-Remote/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="screenshot_note">Note: Screenshots will save to the computer, not this device</string>
     <string name="settings_keepScreenOn">Keep Screen On</string>
     <string name="settings_lockPortrait">Stay in Portrait</string>
     <string name="settings_port">Port</string>

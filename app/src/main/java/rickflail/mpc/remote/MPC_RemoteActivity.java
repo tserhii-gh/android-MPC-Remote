@@ -49,14 +49,14 @@ public class MPC_RemoteActivity extends Activity {
 	ImageButton btnJumpForward;
 	
 	ImageButton btnPrev;
-	ImageButton btnLJumpBack;
-	ImageButton btnLJumpForward;
 	ImageButton btnNext;
 	
 	ImageButton btnFullscreen;
-	ImageButton btnScreenshot;
-	ImageButton btnSubtitles;
-	ImageButton btnFramestep;
+	ImageButton btnSubPrev;
+    ImageButton btnStreamPrev;
+	ImageButton btnMute;
+    ImageButton btnVoldesc;
+    ImageButton btnVolinc;
 	
 	Button btnRetry;
 
@@ -99,28 +99,31 @@ public class MPC_RemoteActivity extends Activity {
         /*EXTRA CONTROLS*/
         btnPrev = (ImageButton) findViewById(R.id.buttonPrev);
         btnPrev.setOnClickListener(sendCommand(getString(R.string.prev)));
-        
-        btnLJumpBack = (ImageButton) findViewById(R.id.buttonLargeJumpBack);
-        btnLJumpBack.setOnClickListener(sendCommand(getString(R.string.ljumpback)));
-        
-        btnLJumpForward = (ImageButton) findViewById(R.id.buttonLargeJumpForward);
-        btnLJumpForward.setOnClickListener(sendCommand(getString(R.string.ljumpforward)));
+
         
         btnNext = (ImageButton) findViewById(R.id.buttonNext);
         btnNext.setOnClickListener(sendCommand(getString(R.string.next)));
 
         btnFullscreen = (ImageButton) findViewById(R.id.buttonFullscreen);
         btnFullscreen.setOnClickListener(sendCommand(getString(R.string.fullscreen)));
-        
-        btnScreenshot = (ImageButton) findViewById(R.id.buttonScreenshot);
-        btnScreenshot.setOnClickListener(sendCommand(getString(R.string.screenshot)));
 
-        btnSubtitles = (ImageButton) findViewById(R.id.buttonSubtitles);
-        btnSubtitles.setOnClickListener(sendCommand(getString(R.string.subtitles)));
-        
-        btnFramestep = (ImageButton) findViewById(R.id.buttonFramestep);
-        btnFramestep.setOnClickListener(sendCommand(getString(R.string.stepforward)));
-        
+		/* Custom commands*/
+		/*Volume control*/
+		btnMute = (ImageButton) findViewById(R.id.buttonMute);
+		btnMute.setOnClickListener(sendCommand("909"));
+
+        btnVoldesc = (ImageButton) findViewById(R.id.buttonVolDesc);
+        btnVoldesc.setOnClickListener(sendCommand("908"));
+
+        btnVolinc = (ImageButton) findViewById(R.id.buttonVolInc);
+        btnVolinc.setOnClickListener(sendCommand("907"));
+		/*Audio streams switcher*/
+        btnStreamPrev = (ImageButton) findViewById(R.id.buttonStreams);
+        btnStreamPrev.setOnClickListener(sendCommand("953"));
+
+		/*Subtitle switcher*/
+        btnSubPrev = (ImageButton) findViewById(R.id.buttonSubtitles);
+        btnSubPrev.setOnClickListener(sendCommand("955"));
         
         btnRetry = (Button) findViewById(R.id.buttonRetry);
         btnRetry.setOnClickListener(retryListener());
